@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tocky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    
+    <div id="tab">
+        <div class="tab active" data-tab="profile">Profil</div>
+        <div class="tab" data-tab="slot-machine">Automat</div>
+        <div class="tab" data-tab="setting">Nastaveni</div>
+    </div>
+
+    <div id="profile" class="tab-content active">
+        <h1>Profil</h1>
+        <p>Prostredky: <strong>1000 Kc</strong></p>
+    </div>
+
+    <div id="slot-machine" class="tab-content">
+        <h1>slot-machine</h1>
+    </div>
+
+    <div id="setting" class="tab-content">
+        <h1>setting</h1>
+        <p>Soucet procent hednotlivych symbolu musi byt 100%</p>
+        <label>Tresne: <input type="number" id="cherry-prob" value="50"></label><br>
+        <label>Citron: <input type="number" id="lemon-prob" value="30"></label><br>
+        <label>Meloun: <input type="number" id="watermeloun-prob" value="20"></label><br>
+        <button id="save-setting">Uloz nastaveni</button>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
