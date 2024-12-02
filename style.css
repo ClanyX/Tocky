@@ -33,3 +33,32 @@
 .tab-content.active{
     display: block;
 }
+
+#reels{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.reel{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 0 10px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#result{
+    margin-top: 10px;
+}
+
+#spin-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
